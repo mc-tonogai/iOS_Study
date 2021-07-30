@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -128,14 +128,13 @@
 		8334EFC9269E8AAD00D71457 /* study02 */ = {
 			isa = PBXGroup;
 			children = (
+				839D7C4026B35F3C00A7B46E /* Model */,
 				8334EFCA269E8AAD00D71457 /* AppDelegate.swift */,
 				8334EFCC269E8AAD00D71457 /* SceneDelegate.swift */,
 				8334EFCE269E8AAD00D71457 /* ViewController.swift */,
 				8334F005269EB48700D71457 /* FirstPageViewController.swift */,
 				8334F00F269ED6F100D71457 /* ListViewController.swift */,
 				8334F00A269ECDD500D71457 /* SecondPageViewController.swift */,
-				8334F01426AE237F00D71457 /* User.swift */,
-				8334F01926AE23A300D71457 /* Article.swift */,
 				8334F000269EAB0800D71457 /* ModalViewController.swift */,
 				8334EFD0269E8AAD00D71457 /* Main.storyboard */,
 				8334EFD3269E8AAF00D71457 /* Assets.xcassets */,
@@ -163,6 +162,15 @@
 			path = study02UITests;
 			sourceTree = "<group>";
 		};
+		839D7C4026B35F3C00A7B46E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8334F01926AE23A300D71457 /* Article.swift */,
+				8334F01426AE237F00D71457 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DB4379675D1B4EDEE1580661 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +181,6 @@
 				413490D8E5EBE8AF71CF1E6D /* Pods-study02Tests.debug.xcconfig */,
 				08740F29B14FFAD2E26A6FB7 /* Pods-study02Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

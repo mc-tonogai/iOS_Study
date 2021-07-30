@@ -14,7 +14,7 @@ class FirstPageViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .systemBlue
         view.setTitle("次のページ", for: .normal)
-        view.addTarget(self, action: #selector(nextPage(_:)), for: .touchDown)
+        view.addTarget(self, action: #selector(nextPage(_:)), for: .touchUpInside)
         return view
     }()
     
@@ -32,9 +32,10 @@ class FirstPageViewController: UIViewController {
     }
     
     @objc func nextPage(_ sender: UIButton) {
-        //let secondPageViewController = SecondPageViewController.init()
-        let listViewController = ListViewController.init()
-         navigationController?.pushViewController(listViewController, animated: true)
+        let secondPageViewController = SecondPageViewController.init()
+        //let listViewController = ListViewController.init()
+        navigationController?.pushViewController(secondPageViewController, animated: true)
+        //navigationController?.pushViewController(listViewController, animated: true)
         
     }
     
