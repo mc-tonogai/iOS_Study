@@ -44,8 +44,8 @@ class SecondPageViewController: UIViewController, UITableViewDelegate,UITableVie
 
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
         let article = articles[indexPath.row]
-        //cell.textLabel?.text = article.title
-        cell.textLabel?.text = "row \(indexPath.row)"
+        cell.textLabel?.text = article.title
+        //cell.textLabel?.text = "row \(indexPath.row)"
         //cell.detailTextLabel?.text = article.user.name
         return cell
     }
