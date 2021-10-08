@@ -8,6 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var myLabel: UILabel!
+    
+    @IBAction func buttonTapped(sender: UIButton){
+        myLabel.text = "tapped!!!"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

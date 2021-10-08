@@ -8,22 +8,29 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    
+    var result = 0.0
+    
+    @IBOutlet var resultLabel: UILabel!
+    @IBOutlet var messageLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //roundで結果を四捨五入している
+        resultLabel.text = "\(round(result))"
+        
+        //正解数に応じたメッセージへ分岐
+        if result < 50 {
+            messageLabel.text = "もう少し頑張ってください"
+        } else if result < 80 {
+            messageLabel.text = "ナイス！"
+        } else {
+            messageLabel.text = "ぐれーと！"
+        }
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

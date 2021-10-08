@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol ToPassDataProtocol: AnyObject {
+    
+    func dataSend(data: Double)
+}
